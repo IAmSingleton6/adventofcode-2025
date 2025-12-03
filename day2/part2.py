@@ -3,7 +3,7 @@ def is_invalid(id: int) -> bool:
     str_len = len(str_id)
 
     if str_len == 1:
-            return False
+        return False
 
     # split the string by the divisor evenly
     # ensure every split is identical
