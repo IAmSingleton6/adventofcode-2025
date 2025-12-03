@@ -45,7 +45,7 @@ def main():
             if is_invalid(i):
                 invalid_ids.append(i)
     
-    invalid_count = sum(int(x) for x in invalid_ids)
+    invalid_count = sum(x for x in invalid_ids)
     print(len(invalid_ids))
     print(invalid_count)
 
