@@ -23,9 +23,6 @@ def main():
     invalid_ids = []
 
     for range_start, range_end in ranges:
-        print(range_start)
-        print(range_end)
-        print("")
         for i in range(range_start, range_end + 1):
             if is_invalid(i):
                 invalid_ids.append(i)
