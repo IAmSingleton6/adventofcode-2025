@@ -6,7 +6,7 @@ class MathProblem:
     def add_number(self, number: int) -> None:
         self.numbers.append(number)
 
-    def add_operator(self, operator: str) -> None:
+    def set_operator(self, operator: str) -> None:
         self.operator = operator
     
     def solve(self) -> int:
