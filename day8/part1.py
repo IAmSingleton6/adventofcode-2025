@@ -44,12 +44,6 @@ class Circuit:
         self.junction_boxes.append(junction_box)
         junction_box.assign_circuit(self)
     
-    def contains_junction_box_at(self, junction_box: JunctionBox) -> bool:
-        return any(
-            jb.coordinate.get() == junction_box.coordinate.get()
-            for jb in self.junction_boxes
-        )
-    
     def count_junction_boxes(self) -> int:
         return len(self.junction_boxes)
     
